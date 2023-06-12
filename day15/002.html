@@ -1,0 +1,29 @@
+<!-- 레이아웃 -->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* 하위 선택자 : div 내부에 있는 li */
+    div li {background-color: yellow;}
+    /* 자식 선택자 : div 바로 밑에 있는 li (아무것도 선택되지 않음) */
+    div>li {font-size: 150%;}
+  </style>
+</head>
+<body>
+  <div>
+    <ul>
+      <li>짜장</li>
+      <li>짬뽕</li>
+      <li>
+        <ul>
+          <li>단무지</li>
+          <li>짜사이</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</body>
+</html>

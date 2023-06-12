@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>float 을 이용해서 간단한 메뉴</title>
+  <style>
+    /* css reset (css 초기화) */
+    * {padding: 0; margin: 0;}
+    ul {list-style: none; overflow: hidden;}
+    li {float: left; width: 120px; background-color: skyblue;
+      height: 35px; text-align: center; line-height: 35px;}
+    a {color: white; text-decoration: none; display: block;}
+    /* text-decoration: none; 은 a tag 의 text 에 생기는 밑줄을 없앤다. */
+    /* a 라는 inline 요소에 display: block; 을 지정함으로 a 를 li 에 꽉 채운다. */
+    li:hover {background-color: blue; cursor: pointer;}
+  </style>
+</head>
+<body>
+  <ul>
+    <li><a href="#">회사 소개</a></li>
+    <li><a href="#">상품들</a></li>
+    <li><a href="#">고객 지원</a></li>
+    <li><a href="#">게시판</a></li>
+  </ul>
+</body>
+</html>

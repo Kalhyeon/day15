@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>선택자</title>
+  <style>
+    /* 우선순위는 id (100), class (10), tag (1), 전체 (0) 이다. */
+    /* 전체 선택자 */
+    * {color: skyblue;}
+    /* tag 선택자 */
+    h1 {color: deeppink;}
+    /* class 선택자 */
+    .orange {color: orange;}
+    h1 .orange {}    /* 하위 선택자 (11) */
+    h1, .orange {}   /* 선택자를 나열 (1, 10) */
+    h1.orange {}     /* h1 중에서 .orange (10) */
+    li#jjajang {}    /* li 중에서 #jjajang (101) */
+  </style>
+</head>
+<body>
+  <h1 class="orange">식사부</h1>
+  <div>
+    <ul>
+      <li id="jjajang">짜장</li>
+      <li>짬뽕</li>
+    </ul>
+  </div>
+  <h1>요리부</h1>
+  <div>
+    <ul>
+      <li>탕수육</li>
+      <li>깐풍기</li>
+    </ul>
+  </div>
+</body>
+</html>
